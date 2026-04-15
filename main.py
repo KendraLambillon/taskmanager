@@ -23,11 +23,13 @@ def main():
                 description = input("Enter task description: ")
                 manager.add_task(description)
             case "2":
-                pass
+                manager.list_tasks()
             case "3":
-                pass
+                id = input("Enter the ID of the task to complete: ")
+                manager.complete_task(id)
             case "4":
-                pass
+                id = input("Enter the ID of the task to delete: ")
+                manager.delete_task(id)
             case "5":
                 print("Exiting...")
                 break
