@@ -63,6 +63,7 @@ class TaskManager:
 
         except FileNotFoundError:
             self._tasks = []
+            self._next_id = 1
             
     
     def save_tasks(self):
